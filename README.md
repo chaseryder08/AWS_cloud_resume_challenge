@@ -1,5 +1,5 @@
 # **Cloud Resume Challenge**
-I completed the [Cloud Resume Challenge](https://cloudresumechallenge.dev/docs/the-challenge/aws/), which is a full stack static website project which utilizes AWS services.
+I completed the [Cloud Resume Challenge](https://cloudresumechallenge.dev/docs/the-challenge/aws/), which is a full stack static website project which utilizes multiple AWS services.
 
 My deployed resume website can be found [here](https://chasedecosterresume.com)
 
