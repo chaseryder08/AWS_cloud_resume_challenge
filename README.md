@@ -12,15 +12,15 @@ The frontend portion of this project was built using AWS S3, which hosted my sta
 ---
 
 ## CI/CD
-GitHub actions was used to sync my S3 bucket when code was uploaded to my repository. After files are uploaded, Cloudfront cache is invalidated, which provides real-time updates with any code/website changes.
+GitHub actions was used to sync my S3 bucket when code was uploaded to my repository. After files are uploaded, Cloudfront cache provides real-time updates with any code/website changes.
 
 ---
 
 ## BACKEND DIAGRAM:
 ![This is an image](images/back_end.png)
-The backend portion was built with IaC (Terraform) to provision AWS DynamoDB, Lambda and API Gateway services. Once the website is visited, Javascript code makes an API call to AWS API Gateway; this call then triggers a Lambda function written in Python, to access AWS DyanmoDB, and retreive the current visitor count data. It then will add 1+ to the count attribute, and returns the updated visitor count value and displays it on the screen/website. 
+The backend portion was built using Terraform (IaC) to provision AWS DynamoDB, Lambda and API Gateway services. Once the website is visited, Javascript code runs to make an API call to AWS API Gateway; this call then triggers the Lambda function written in Python, to access AWS DyanmoDB, and retreive the current visitor count data. Every visit will add 1+ to the count attribute, and return the updated visitor count value whichs displays on webpage. 
 
 ---
 
 ## CI/CD
-The backend uses GitHub Actions to update the changes made in the Terraform configuration files any time code is pushed to this repository. Cypress tests are also run on the API Gateway to make sure the Lambda function is returning usable data.
+GitHub Actions were used to update the changes made in the Terraform configuration files any time code was pushed. Cypress tests were also run on the API Gateway to ensure the Lambda function returned usable data.
