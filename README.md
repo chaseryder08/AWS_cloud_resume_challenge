@@ -5,9 +5,9 @@ My deployed resume website can be found [here](https://chasedecosterresume.com)
 
 ---
 
-## FRONT-END DIAGRAM:
+## FRONT-END DIAGRAM: 
 ![This is an image](images/front_end.png)
-The frontend portion of this project was built using AWS S3, which hosted my static website consisting of HTML, CSS, and JavaScript files. I purchased my domain name from AWS Route53, which pointed internet traffic to a AWS CloudFront  distribution. Cloudfront would cache my files from S3, and serve my website content to users. AWS Certificate manager was also used to establish a TLS connection between the client, which provides a secure HTTPS connection. 
+The frontend portion of this project was built using AWS S3, which hosted my static website consisting of HTML, CSS, and JavaScript files. I purchased my domain name from AWS Route53, which pointed internet traffic to an AWS CloudFront distribution. Cloudfront would cache my files from S3, and serve my website content to users. AWS Certificate manager was also used to establish a TLS connection between the client, which provides a secure HTTPS connection. 
 
 ---
 
