@@ -20,7 +20,5 @@ GitHub actions was used to sync my S3 bucket when code was uploaded to my reposi
 ![This is an image](images/back_end.png)
 The backend portion was built using Terraform (IaC) to provision AWS DynamoDB, Lambda and API Gateway services. Once the website is visited, Javascript code runs to make an API call to AWS API Gateway; this call then triggers the Lambda function written in Python, to access AWS DyanmoDB, and retreive the current visitor count data. Every visit will add 1+ to the count attribute, and return the updated visitor count value whichs displays on webpage. 
 
----
-
 <!-- ## CI/CD
 GitHub Actions were used to update the changes made in the Terraform configuration files any time code was pushed. Cypress tests were also run on the API Gateway to ensure the Lambda function returned usable data. -->
